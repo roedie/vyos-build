@@ -1,0 +1,11 @@
+Source: crowdsec-firewall-bouncer
+Maintainer: Crowdsec Team <debian@crowdsec.net>
+Build-Depends: debhelper, jq, bash, git
+
+Package: crowdsec-firewall-bouncer-nftables
+Architecture: any
+Description: Firewall bouncer for Crowdsec (nftables)
+Depends: nftables, gettext-base
+Replaces: crowdsec-firewall-bouncer
+Conflicts: crowdsec-firewall-bouncer-iptables
+
